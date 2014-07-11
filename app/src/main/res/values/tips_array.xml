@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tips_array">
+        <item>@string/percent_Amt</item>
+        <item>@string/bad_tip</item>
+        <item>@string/mediocre_tip</item>
+        <item>@string/average_tip</item>
+        <item>@string/good_tip</item>
+        <item>@string/great_tip</item>
+    </string-array>
+</resources>

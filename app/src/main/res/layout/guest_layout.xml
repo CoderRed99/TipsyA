@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name" />
+    <TextView
+        android:id="@+id/tvMeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meal" />
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total" />
+    <TextView
+        android:id="@+id/tvTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tip" />
+    <TextView
+        android:id="@+id/tvBadTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bad Tip" />
+    <TextView
+        android:id="@+id/tvMediocreTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mediocre Tip" />
+    <TextView
+        android:id="@+id/tvAvgTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Avg Tip" />
+    <TextView
+        android:id="@+id/tvGoodTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Good Tip" />
+    <TextView
+        android:id="@+id/tvGreatTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Great Tip" />
+</LinearLayout><!-- From: file:/Users/dianna/Google%20Drive/dev/AndroidStudioProjects/Tipsy/app/src/main/res/layout/guest_layout.xml -->

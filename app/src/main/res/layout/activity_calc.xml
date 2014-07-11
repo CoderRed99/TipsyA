@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:label="@string/calc_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bluep_blur_background"
+    tools:context=".CalcActivity" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Guest Name: "
+        android:textStyle="bold"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etGuestName"
+        android:inputType="textPersonName"
+        android:hint="Enter guest name"
+        android:ems="10"
+        android:gravity="center"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Enter Amount: "
+        android:textStyle="bold"
+
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etGuestMealAmt"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:hint="@string/dollar_Amt"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:digits="1234567890.$"
+        android:gravity="right|bottom"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnAdd"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toLeftOf="@+id/btnAdd"/>
+        <requestFocus />
+
+    <Button
+        android:id="@+id/btnAdd"
+        style="?android:attr/buttonStyleSmall"
+        android:text="Add Amt"
+        android:textStyle="bold"
+        android:onClick="onAddClick"
+
+        android:layout_below="@+id/etGuestName"
+        android:layout_alignRight="@+id/etGuestName"
+        android:layout_alignEnd="@+id/etGuestName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Spinner
+        android:id="@+id/spService"
+        android:prompt="@string/service_level"
+        android:entries="@array/service_array"
+        android:gravity="right|bottom"
+
+        android:layout_marginTop="65dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnDone"
+        android:text="Done calculating this meal"
+        android:textStyle="bold"
+        android:onClick="onDoneClick"
+
+        android:layout_below="@+id/spService"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvMealTotal"
+        android:hint="@string/dollar_Amt"
+        android:ems="10"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        android:gravity="right|bottom"
+
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@id/btnDone"
+        android:layout_above="@+id/listView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:id="@+id/listView"
+
+        android:layout_below="@+id/btnDone"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"/>
+</RelativeLayout>
+<!-- From: file:/Users/dianna/Google%20Drive/dev/AndroidStudioProjects/Tipsy/app/src/main/res/layout/activity_calc.xml -->

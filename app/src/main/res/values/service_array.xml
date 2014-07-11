@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="service_array">
+        <item>@string/service_level</item>
+        <item>@string/bad_service</item>
+        <item>@string/mediocre_service</item>
+        <item>@string/average_service</item>
+        <item>@string/good_service</item>
+        <item>@string/great_service</item>
+    </string-array>
+</resources>
